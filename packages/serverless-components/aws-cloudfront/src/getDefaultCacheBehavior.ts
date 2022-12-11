@@ -33,13 +33,14 @@ export default (originId, defaults: DefaultCacheBehavior = {}) => {
   const defaultCacheBehavior = {
     TargetOriginId: originId,
     /* ForwardedValues: getForwardedValues(forward), */
+    CachePolicyId: "4135ea2d-6df8-44a3-9df3-4b5a84be39ad",
     TrustedSigners: {
       Enabled: false,
       Quantity: 0,
       Items: []
     },
     ViewerProtocolPolicy: viewerProtocolPolicy,
-    MinTTL: minTTL,
+    // MinTTL: minTTL,
     AllowedMethods: {
       Quantity: allowedHttpMethods.length,
       Items: allowedHttpMethods,

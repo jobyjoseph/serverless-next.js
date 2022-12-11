@@ -1,6 +1,6 @@
 {
   "name": "@jobyjoseph/aws-cloudfront",
-  "version": "3.7.11",
+  "version": "3.7.12",
   "main": "./serverless.js",
   "types": "dist/component.d.ts",
   "publishConfig": {

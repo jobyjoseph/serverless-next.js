@@ -26,7 +26,8 @@ export default (
       cookies: "all",
       queryString: true
     }), */
-    MinTTL: minTTL,
+    // MinTTL: minTTL,
+    CachePolicyId: "4135ea2d-6df8-44a3-9df3-4b5a84be39ad",
     PathPattern: pathPattern,
     TargetOriginId: originId,
     TrustedSigners: trustedSigners,
