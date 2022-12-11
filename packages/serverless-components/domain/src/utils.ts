@@ -449,6 +449,18 @@ const addDomainToCloudfrontDistribution = async (
       JSON.stringify(params, null, 2)
   );
 
+  // Clear cloudfront cache
+  params.DistributionConfig.DefaultCacheBehavior = {
+    ...params.DistributionConfig.DefaultCacheBehavior,
+    CachePolicyId: "4135ea2d-6df8-44a3-9df3-4b5a84be39ad"
+  };
+  if (Array.isArray(params.DistributionConfig.CacheBehaviors)) {
+    params.DistributionConfig.CacheBehaviors.forEach((CacheBehavior, index) => {
+      params.DistributionConfig.CacheBehaviors[index].CachePolicyId =
+        "4135ea2d-6df8-44a3-9df3-4b5a84be39ad";
+    });
+  }
+
   // 6. then finally update!
   const res = await cf.updateDistribution(params).promise();
 
