@@ -39,7 +39,7 @@ export default (originId, defaults: DefaultCacheBehavior = {}) => {
       Items: []
     },
     ViewerProtocolPolicy: viewerProtocolPolicy,
-    MinTTL: minTTL,
+    // MinTTL: minTTL,
     AllowedMethods: {
       Quantity: allowedHttpMethods.length,
       Items: allowedHttpMethods,
@@ -49,8 +49,8 @@ export default (originId, defaults: DefaultCacheBehavior = {}) => {
       }
     },
     SmoothStreaming: smoothStreaming,
-    DefaultTTL: defaultTTL,
-    MaxTTL: maxTTL,
+    // DefaultTTL: defaultTTL,
+    // MaxTTL: maxTTL,
     Compress: compress,
     LambdaFunctionAssociations: {
       Quantity: 0,
