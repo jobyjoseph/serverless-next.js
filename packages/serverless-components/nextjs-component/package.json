@@ -1,9 +1,9 @@
 {
-  "name": "@sls-next/serverless-component",
+  "name": "@jobyjoseph/serverless-component",
   "publishConfig": {
     "access": "public"
   },
-  "version": "3.7.0",
+  "version": "3.7.3",
   "description": "Serverless Next.js powered by Serverless Components",
   "main": "./serverless.js",
   "types": "dist/component.d.ts",
