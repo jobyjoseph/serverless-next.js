@@ -26,7 +26,7 @@ export default (
       cookies: "all",
       queryString: true
     }), */
-    // MinTTL: minTTL,
+    MinTTL: minTTL,
     PathPattern: pathPattern,
     TargetOriginId: originId,
     TrustedSigners: trustedSigners,

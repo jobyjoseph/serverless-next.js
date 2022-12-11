@@ -39,7 +39,7 @@ export default (originId, defaults: DefaultCacheBehavior = {}) => {
       Items: []
     },
     ViewerProtocolPolicy: viewerProtocolPolicy,
-    // MinTTL: minTTL,
+    MinTTL: minTTL,
     AllowedMethods: {
       Quantity: allowedHttpMethods.length,
       Items: allowedHttpMethods,
