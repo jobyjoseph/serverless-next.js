@@ -4435,6 +4435,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jobyjoseph/aws-cloudfront@workspace:packages/serverless-components/aws-cloudfront":
+  version: 0.0.0-use.local
+  resolution: "@jobyjoseph/aws-cloudfront@workspace:packages/serverless-components/aws-cloudfront"
+  dependencies:
+    "@babel/preset-typescript": 7.16.7
+    "@serverless/core": 1.1.2
+    "@types/fs-extra": 9.0.13
+    "@types/node": 17.0.19
+    "@types/ramda": 0.27.62
+    aws-sdk: 2.1093.0
+    babel-eslint: 10.1.0
+    eslint: 8.7.0
+    eslint-config-prettier: 8.3.0
+    eslint-plugin-import: 2.25.4
+    eslint-plugin-prettier: 4.0.0
+    fs-extra: 9.1.0
+    jest: 27.4.7
+    prettier: 2.5.1
+    ramda: 0.27.1
+    rimraf: 3.0.2
+    typescript: 4.5.5
+  peerDependencies:
+    "@babel/core": 7.17.5
+    "@serverless/core": 1.1.2
+    aws-sdk: 2.1093.0
+  languageName: unknown
+  linkType: soft
+
 "@jobyjoseph/serverless-component@workspace:packages/serverless-components/nextjs-component":
   version: 0.0.0-use.local
   resolution: "@jobyjoseph/serverless-component@workspace:packages/serverless-components/nextjs-component"
@@ -4445,15 +4473,15 @@ __metadata:
     "@babel/preset-typescript": 7.15.0
     "@jest/globals": 27.3.1
     "@serverless/core": 1.1.2
-    "@sls-next/aws-cloudfront": "link:../aws-cloudfront"
-    "@sls-next/aws-lambda": "link:../aws-lambda"
-    "@sls-next/aws-s3": "link:../aws-s3"
-    "@sls-next/aws-sqs": "link:../aws-sqs"
-    "@sls-next/cloudfront": "link:../../libs/cloudfront"
-    "@sls-next/domain": "link:../domain"
-    "@sls-next/lambda-at-edge": "link:../../libs/lambda-at-edge"
-    "@sls-next/next-aws-cloudfront": "link:../../compat-layers/lambda-at-edge-compat"
-    "@sls-next/s3-static-assets": "link:../../libs/s3-static-assets"
+    "@sls-next/aws-cloudfront": 3.7.0
+    "@sls-next/aws-lambda": 3.7.0
+    "@sls-next/aws-s3": 3.7.0
+    "@sls-next/aws-sqs": 3.7.0
+    "@sls-next/cloudfront": 3.7.0
+    "@sls-next/domain": 3.7.0
+    "@sls-next/lambda-at-edge": 3.7.0
+    "@sls-next/next-aws-cloudfront": 3.7.0
+    "@sls-next/s3-static-assets": 3.7.0
     "@types/fs-extra": 9.0.13
     "@types/jest": 27.0.2
     "@types/node": 16.11.4
@@ -5841,39 +5869,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sls-next/aws-cloudfront@link:../aws-cloudfront::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/aws-cloudfront@link:../aws-cloudfront::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component"
-  languageName: node
-  linkType: soft
-
-"@sls-next/aws-cloudfront@workspace:packages/serverless-components/aws-cloudfront":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/aws-cloudfront@workspace:packages/serverless-components/aws-cloudfront"
+"@sls-next/aws-cloudfront@npm:3.7.0":
+  version: 3.7.0
+  resolution: "@sls-next/aws-cloudfront@npm:3.7.0"
   dependencies:
-    "@babel/preset-typescript": 7.16.7
     "@serverless/core": 1.1.2
-    "@types/fs-extra": 9.0.13
-    "@types/node": 17.0.19
-    "@types/ramda": 0.27.62
     aws-sdk: 2.1093.0
-    babel-eslint: 10.1.0
-    eslint: 8.7.0
-    eslint-config-prettier: 8.3.0
-    eslint-plugin-import: 2.25.4
-    eslint-plugin-prettier: 4.0.0
-    fs-extra: 9.1.0
-    jest: 27.4.7
-    prettier: 2.5.1
     ramda: 0.27.1
-    rimraf: 3.0.2
-    typescript: 4.5.5
   peerDependencies:
     "@babel/core": 7.17.5
     "@serverless/core": 1.1.2
     aws-sdk: 2.1093.0
-  languageName: unknown
-  linkType: soft
+  checksum: f2f6eb543d8b26b952d0ec5ba9590650d74478b5125b031ef0bc426f22bebd6df2381a36837cca45e6173a72552da0529ff6476da8e11c6c1ab6dda0316e0f55
+  languageName: node
+  linkType: hard
 
 "@sls-next/aws-common@link:../aws-common::locator=%40sls-next%2Flambda%40workspace%3Apackages%2Flibs%2Flambda":
   version: 0.0.0-use.local
@@ -5900,13 +5909,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sls-next/aws-lambda@link:../aws-lambda::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/aws-lambda@link:../aws-lambda::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component"
-  languageName: node
-  linkType: soft
-
-"@sls-next/aws-lambda@workspace:packages/serverless-components/aws-lambda":
+"@sls-next/aws-lambda@3.7.0, @sls-next/aws-lambda@workspace:packages/serverless-components/aws-lambda":
   version: 0.0.0-use.local
   resolution: "@sls-next/aws-lambda@workspace:packages/serverless-components/aws-lambda"
   dependencies:
@@ -5936,13 +5939,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sls-next/aws-s3@link:../aws-s3::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/aws-s3@link:../aws-s3::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component"
-  languageName: node
-  linkType: soft
-
-"@sls-next/aws-s3@workspace:packages/serverless-components/aws-s3":
+"@sls-next/aws-s3@3.7.0, @sls-next/aws-s3@workspace:packages/serverless-components/aws-s3":
   version: 0.0.0-use.local
   resolution: "@sls-next/aws-s3@workspace:packages/serverless-components/aws-s3"
   dependencies:
@@ -5972,13 +5969,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sls-next/aws-sqs@link:../aws-sqs::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/aws-sqs@link:../aws-sqs::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component"
-  languageName: node
-  linkType: soft
-
-"@sls-next/aws-sqs@workspace:packages/serverless-components/aws-sqs":
+"@sls-next/aws-sqs@3.7.0, @sls-next/aws-sqs@workspace:packages/serverless-components/aws-sqs":
   version: 0.0.0-use.local
   resolution: "@sls-next/aws-sqs@workspace:packages/serverless-components/aws-sqs"
   dependencies:
@@ -6014,13 +6005,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sls-next/cloudfront@link:../../libs/cloudfront::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/cloudfront@link:../../libs/cloudfront::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component"
-  languageName: node
-  linkType: soft
-
-"@sls-next/cloudfront@workspace:packages/libs/cloudfront":
+"@sls-next/cloudfront@3.7.0, @sls-next/cloudfront@workspace:packages/libs/cloudfront":
   version: 0.0.0-use.local
   resolution: "@sls-next/cloudfront@workspace:packages/libs/cloudfront"
   dependencies:
@@ -6102,13 +6087,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sls-next/domain@link:../domain::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/domain@link:../domain::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component"
-  languageName: node
-  linkType: soft
-
-"@sls-next/domain@workspace:packages/serverless-components/domain":
+"@sls-next/domain@3.7.0, @sls-next/domain@workspace:packages/serverless-components/domain":
   version: 0.0.0-use.local
   resolution: "@sls-next/domain@workspace:packages/serverless-components/domain"
   dependencies:
@@ -6123,19 +6102,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sls-next/lambda-at-edge@link:../../libs/lambda-at-edge::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/lambda-at-edge@link:../../libs/lambda-at-edge::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component"
-  languageName: node
-  linkType: soft
-
-"@sls-next/lambda-at-edge@link:../../libs/lambda-at-edge::locator=%40sls-next%2Fcdk-construct%40workspace%3Apackages%2Fserverless-components%2Fnextjs-cdk-construct":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/lambda-at-edge@link:../../libs/lambda-at-edge::locator=%40sls-next%2Fcdk-construct%40workspace%3Apackages%2Fserverless-components%2Fnextjs-cdk-construct"
-  languageName: node
-  linkType: soft
-
-"@sls-next/lambda-at-edge@workspace:packages/libs/lambda-at-edge":
+"@sls-next/lambda-at-edge@3.7.0, @sls-next/lambda-at-edge@workspace:packages/libs/lambda-at-edge":
   version: 0.0.0-use.local
   resolution: "@sls-next/lambda-at-edge@workspace:packages/libs/lambda-at-edge"
   dependencies:
@@ -6198,6 +6165,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@sls-next/lambda-at-edge@link:../../libs/lambda-at-edge::locator=%40sls-next%2Fcdk-construct%40workspace%3Apackages%2Fserverless-components%2Fnextjs-cdk-construct":
+  version: 0.0.0-use.local
+  resolution: "@sls-next/lambda-at-edge@link:../../libs/lambda-at-edge::locator=%40sls-next%2Fcdk-construct%40workspace%3Apackages%2Fserverless-components%2Fnextjs-cdk-construct"
+  languageName: node
+  linkType: soft
+
 "@sls-next/lambda@workspace:packages/libs/lambda":
   version: 0.0.0-use.local
   resolution: "@sls-next/lambda@workspace:packages/libs/lambda"
@@ -6232,10 +6205,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sls-next/next-aws-cloudfront@link:../../compat-layers/lambda-at-edge-compat::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component":
+"@sls-next/next-aws-cloudfront@3.7.0, @sls-next/next-aws-cloudfront@workspace:packages/compat-layers/lambda-at-edge-compat":
   version: 0.0.0-use.local
-  resolution: "@sls-next/next-aws-cloudfront@link:../../compat-layers/lambda-at-edge-compat::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component"
-  languageName: node
+  resolution: "@sls-next/next-aws-cloudfront@workspace:packages/compat-layers/lambda-at-edge-compat"
+  dependencies:
+    "@types/aws-lambda": ^8.10.92
+  languageName: unknown
   linkType: soft
 
 "@sls-next/next-aws-cloudfront@link:../../compat-layers/lambda-at-edge-compat::locator=%40sls-next%2Flambda-at-edge%40workspace%3Apackages%2Flibs%2Flambda-at-edge":
@@ -6244,27 +6219,13 @@ __metadata:
   languageName: node
   linkType: soft
 
-"@sls-next/next-aws-cloudfront@workspace:packages/compat-layers/lambda-at-edge-compat":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/next-aws-cloudfront@workspace:packages/compat-layers/lambda-at-edge-compat"
-  dependencies:
-    "@types/aws-lambda": ^8.10.92
-  languageName: unknown
-  linkType: soft
-
 "@sls-next/next-aws-lambda@workspace:packages/compat-layers/apigw-lambda-compat":
   version: 0.0.0-use.local
   resolution: "@sls-next/next-aws-lambda@workspace:packages/compat-layers/apigw-lambda-compat"
   languageName: unknown
   linkType: soft
 
-"@sls-next/s3-static-assets@link:../../libs/s3-static-assets::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component":
-  version: 0.0.0-use.local
-  resolution: "@sls-next/s3-static-assets@link:../../libs/s3-static-assets::locator=%40jobyjoseph%2Fserverless-component%40workspace%3Apackages%2Fserverless-components%2Fnextjs-component"
-  languageName: node
-  linkType: soft
-
-"@sls-next/s3-static-assets@workspace:packages/libs/s3-static-assets":
+"@sls-next/s3-static-assets@3.7.0, @sls-next/s3-static-assets@workspace:packages/libs/s3-static-assets":
   version: 0.0.0-use.local
   resolution: "@sls-next/s3-static-assets@workspace:packages/libs/s3-static-assets"
   dependencies:
