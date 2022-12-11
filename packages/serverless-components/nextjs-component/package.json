@@ -1,9 +1,9 @@
 {
-  "name": "@sls-next/serverless-component",
+  "name": "@jobyjoseph/serverless-component",
   "publishConfig": {
     "access": "public"
   },
-  "version": "3.7.0",
+  "version": "3.7.6",
   "description": "Serverless Next.js powered by Serverless Components",
   "main": "./serverless.js",
   "types": "dist/component.d.ts",
@@ -33,8 +33,8 @@
     "node": ">=10.11.0"
   },
   "dependencies": {
+    "@jobyjoseph/aws-cloudfront": "link:../aws-cloudfront",
     "@serverless/core": "1.1.2",
-    "@sls-next/aws-cloudfront": "link:../aws-cloudfront",
     "@sls-next/aws-lambda": "link:../aws-lambda",
     "@sls-next/aws-s3": "link:../aws-s3",
     "@sls-next/aws-sqs": "link:../aws-sqs",
