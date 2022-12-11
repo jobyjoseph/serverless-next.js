@@ -22,10 +22,10 @@ export default (
   } = pathPatternConfig;
 
   return {
-    ForwardedValues: getForwardedValues(pathPatternConfig.forward, {
+    /* ForwardedValues: getForwardedValues(pathPatternConfig.forward, {
       cookies: "all",
       queryString: true
-    }),
+    }), */
     // MinTTL: minTTL,
     PathPattern: pathPattern,
     TargetOriginId: originId,

@@ -32,7 +32,7 @@ export default (originId, defaults: DefaultCacheBehavior = {}) => {
 
   const defaultCacheBehavior = {
     TargetOriginId: originId,
-    ForwardedValues: getForwardedValues(forward),
+    /* ForwardedValues: getForwardedValues(forward), */
     TrustedSigners: {
       Enabled: false,
       Quantity: 0,
