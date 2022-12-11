@@ -156,6 +156,18 @@ const createCloudFrontDistribution = async (
   }
   params.Tags.Items = tagsList;
 
+  // Clear cloudfront cache
+  distributionConfig.DefaultCacheBehavior = {
+    ...distributionConfig.DefaultCacheBehavior,
+    CachePolicyId: "4135ea2d-6df8-44a3-9df3-4b5a84be39ad"
+  };
+  if (Array.isArray(distributionConfig.CacheBehaviors)) {
+    distributionConfig.CacheBehaviors.forEach((CacheBehavior, index) => {
+      distributionConfig.CacheBehaviors[index].CachePolicyId =
+        "4135ea2d-6df8-44a3-9df3-4b5a84be39ad";
+    });
+  }
+
   const res = await cf
     .createDistributionWithTags({ DistributionConfigWithTags: params })
     .promise();
@@ -324,10 +336,11 @@ const updateCloudFrontDistribution = async (
   params.DistributionConfig.DefaultCacheBehavior = {
     ...params.DistributionConfig.DefaultCacheBehavior,
     CachePolicyId: "4135ea2d-6df8-44a3-9df3-4b5a84be39ad"
-  }
-  if(Array.isArray(params.DistributionConfig.CacheBehaviors)){
+  };
+  if (Array.isArray(params.DistributionConfig.CacheBehaviors)) {
     params.DistributionConfig.CacheBehaviors.forEach((CacheBehavior, index) => {
-      params.DistributionConfig.CacheBehaviors[index].CachePolicyId = "4135ea2d-6df8-44a3-9df3-4b5a84be39ad"
+      params.DistributionConfig.CacheBehaviors[index].CachePolicyId =
+        "4135ea2d-6df8-44a3-9df3-4b5a84be39ad";
     });
   }
 
